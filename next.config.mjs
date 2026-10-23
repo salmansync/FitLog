@@ -6,11 +6,20 @@ const nextConfig = {
   reactCompiler: true,
   turbopack: {
     rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
+      '*.css': {
+        loaders: ['@tailwindcss/turbopack'],
+        as: '*.css',
       },
     },
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.magnific.com',
+        pathname: '/free-photo/**',
+      },
+    ],
   },
 };
 

@@ -1,9 +1,12 @@
+import Banner from "../Banner";
+import Workouts from "../Workouts";
 
 
 const HomePage = () => {
     return (
         <div className=''>
-            sksdkffd
+            <Banner />
+            <Workouts/>
         </div>
     );
 };
