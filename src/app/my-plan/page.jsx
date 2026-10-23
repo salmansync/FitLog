@@ -51,7 +51,7 @@ const MyPlanePage = () => {
     return (
         <div className="min-h-screen bg-[#0B0C10] px-4 py-6 text-white sm:px-6 sm:py-8 lg:px-8 lg:py-10">
 
-            {/* Page Heading */}
+
             <div className="mb-6 sm:mb-8">
                 <h1 className="text-2xl font-bold sm:text-3xl">
                     My Workouts
@@ -62,7 +62,7 @@ const MyPlanePage = () => {
                 </p>
             </div>
 
-            {/* Stats Card */}
+
             <div className="mb-6 grid grid-cols-3 divide-x divide-[#252932] rounded-xl border border-[#252932] bg-[#15171D] px-2 py-4 sm:mb-8 sm:px-4 sm:py-5">
 
                 <div className="min-w-0 px-2 sm:px-4">
@@ -97,12 +97,12 @@ const MyPlanePage = () => {
 
             </div>
 
-            {/* Tabs */}
+
             <Tabs
                 selectedIndex={selectedIndex}
                 onSelect={(index) => setSelectedIndex(index)}
             >
-                {/* Tabs and Sort */}
+
                 <div className="mb-5 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
 
                     <TabList className="mb-0 flex w-full gap-2 overflow-x-auto border-b border-[#252932] sm:gap-4">
@@ -125,7 +125,7 @@ const MyPlanePage = () => {
 
                     </TabList>
 
-                    {/* Sorting */}
+
                     <div className="flex w-full items-center gap-3 lg:w-auto lg:shrink-0">
                         <label
                             htmlFor="workout-sort"
@@ -150,7 +150,7 @@ const MyPlanePage = () => {
 
                 </div>
 
-                {/* Today's Plan */}
+
                 <TabPanel>
 
                     {plan.length === 0 ? (
@@ -190,7 +190,7 @@ const MyPlanePage = () => {
 
                 </TabPanel>
 
-                {/* Saved Exercises */}
+
                 <TabPanel>
 
                     {save.length === 0 ? (

@@ -8,7 +8,7 @@ const Banner = () => {
     return (
         <div className="my-6 flex w-full flex-col items-center justify-between gap-8 rounded-3xl border border-gray-800 bg-[#12141d] p-6 text-white shadow-2xl sm:my-8 sm:p-8 lg:my-10 lg:flex-row lg:gap-8 lg:p-12">
 
-            {/* Left Section */}
+
             <div className="w-full flex-1 space-y-5 sm:space-y-6 lg:max-w-xl">
 
                 <p className="text-xs font-extrabold tracking-widest text-lime-400 uppercase">
@@ -35,7 +35,7 @@ const Banner = () => {
                 </div>
             </div>
 
-            {/* Right Section: Image */}
+
      <div className="relative mt-4 h-64 w-full shrink-0 sm:h-80 lg:mt-0 lg:h-87 lg:w-full lg:max-w-md lg:flex-1">
     <Image
         src={banner}

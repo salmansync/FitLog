@@ -11,7 +11,7 @@ const WorkCard = ({ work }) => {
         >
             <div className="h-full overflow-hidden rounded-2xl border border-[#252932] bg-[#15171D] text-white transition-all duration-300 hover:-translate-y-1 hover:border-[#C6FF00]/50 hover:shadow-lg hover:shadow-[#C6FF00]/5">
 
-                {/* Workout Image */}
+
                 <div className="relative h-48 w-full overflow-hidden sm:h-52">
                     <Image
                         src={work.image}
@@ -22,10 +22,10 @@ const WorkCard = ({ work }) => {
                     />
                 </div>
 
-                {/* Workout Details */}
+
                 <div className="p-4 sm:p-6">
 
-                    {/* Muscle Groups */}
+
                     <div className="mb-4 flex flex-wrap gap-2">
                         {work.muscleGroups?.map((muscle, index) => (
                             <span
@@ -37,17 +37,15 @@ const WorkCard = ({ work }) => {
                         ))}
                     </div>
 
-                    {/* Workout Name */}
                     <h2 className="mb-2 text-lg font-extrabold tracking-wide uppercase sm:text-xl">
                         {work.name}
                     </h2>
 
-                    {/* Equipment */}
+
                     <p className="text-sm text-gray-400">
                         {work.equipment}
                     </p>
 
-                    {/* Workout Stats */}
                     <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-[#252932] pt-4 text-xs text-gray-400 sm:gap-4 sm:text-sm">
 
                         <span>◷ {work.duration} min</span>

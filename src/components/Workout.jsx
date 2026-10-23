@@ -7,7 +7,7 @@ const Workout = ({ work }) => {
     return (
         <Link href={`/work/${work.id}`}>
             <div className="overflow-hidden rounded-2xl border border-[#252932] bg-[#15171D] text-white">
-                {/* Workout Image */}
+
                 <div className="relative h-52 w-full">
                     <Image
                         src={work.image}
@@ -18,9 +18,9 @@ const Workout = ({ work }) => {
                     />
                 </div>
 
-                {/* Workout Details */}
+
                 <div className="p-6">
-                    {/* Muscle Groups */}
+
                     <div className="mb-4 flex flex-wrap gap-2">
                         {work.muscleGroups?.map((muscle, index) => (
                             <span
@@ -32,17 +32,17 @@ const Workout = ({ work }) => {
                         ))}
                     </div>
 
-                    {/* Workout Name */}
+
                     <h2 className="mb-1 text-xl font-extrabold uppercase tracking-wide">
                         {work.name}
                     </h2>
 
-                    {/* Equipment */}
+
                     <p className="text-sm text-gray-400">
                         {work.equipment}
                     </p>
 
-                    {/* Workout Stats */}
+
                     <div className="mt-4 flex flex-wrap items-center gap-4 border-t border-[#252932] pt-4 text-sm text-gray-400">
                         <span>◷ {work.duration} min</span>
                         <span>♥ {work.caloriesBurned} kcal</span>

@@ -22,7 +22,7 @@ const WorkList = async ({ params }) => {
 
     return (
         <div className="flex flex-col overflow-hidden rounded-2xl border border-[#252932] bg-[#15171D] text-white md:flex-row">
-            {/* Workout Image */}
+
             <div className="relative h-64 w-full shrink-0 md:h-auto md:w-2/5">
                 <Image
                     src={work.image}
@@ -32,16 +32,16 @@ const WorkList = async ({ params }) => {
                     sizes="(max-width: 768px) 100vw, 40vw"
                 />
             </div>
-            {/* Workout Details */}
+
             <div className="min-w-0 flex-1 p-6">
-                {/* Workout Name */}
+
                 <h2 className="text-xl font-extrabold uppercase tracking-wide">
                     {work.name}
                 </h2>
                 <p className="text-gray-400 my-3">
                     {work.description}
                 </p>
-                {/* Muscle Groups */}
+
                 <div className="mb-4 flex flex-wrap gap-2">
                     {work.muscleGroups?.map((muscle, index) => (
                         <span
@@ -55,7 +55,7 @@ const WorkList = async ({ params }) => {
 
                 <div className='bg-gray-800 p-4 rounded-2xl'>
                     <div className="flex justify-between py-3">
-                        {/* Equipment */}
+
                         <p className='font-medium'>
                             Equipment
                         </p>
@@ -118,10 +118,10 @@ const WorkList = async ({ params }) => {
                         </p>
                     </div> <hr className='text-gray-500 mb-4' />
                 </div>
-                {/* Extra Details */}
+
                 <div className="mt-5 space-y-3 border-t border-[#252932] pt-4 text-sm">
 
-                    {/* Instructions */}
+
                     <div>
                         <h3 className="mb-2 font-bold text-[#C6FF00]">
                             Instructions

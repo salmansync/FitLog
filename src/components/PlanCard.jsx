@@ -40,10 +40,10 @@ const PlanCard = ({ work }) => {
     return (
         <div className="flex w-full items-center justify-between gap-4 rounded-2xl border border-gray-800 bg-[#12141d] p-4 text-white shadow-lg">
 
-            {/* Left section: Image & Info */}
+
             <div className="flex items-center gap-4">
 
-                {/* Exercise Thumbnail */}
+
                 <div className="h-20 w-36 shrink-0 overflow-hidden rounded-xl bg-gray-800">
                     <img
                         src={image}
@@ -52,7 +52,7 @@ const PlanCard = ({ work }) => {
                     />
                 </div>
 
-                {/* Details */}
+
                 <div className="flex flex-col justify-center gap-1">
 
                     <h3 className="text-lg font-extrabold uppercase tracking-wide text-white">
@@ -63,7 +63,7 @@ const PlanCard = ({ work }) => {
                         {equipment}
                     </p>
 
-                    {/* Stats */}
+
                     <div className="mt-1 flex items-center gap-4 text-xs text-gray-300">
 
                         <div className="flex items-center gap-1">
@@ -85,10 +85,10 @@ const PlanCard = ({ work }) => {
                 </div>
             </div>
 
-            {/* Right section: Action Buttons */}
+
             <div className="flex items-center gap-3">
 
-                {/* View Details */}
+
                 <Link
                     href={`/work/${work.id}`}
                     className="rounded-full border border-gray-700 px-5 py-2.5 text-sm font-medium text-gray-200 transition-colors hover:border-gray-500"
@@ -96,7 +96,7 @@ const PlanCard = ({ work }) => {
                     View Details
                 </Link>
 
-                {/* Mark as Done */}
+
                 <button
                     onClick={handleComplete}
                     disabled={isCompleted}
@@ -110,7 +110,7 @@ const PlanCard = ({ work }) => {
                     {isCompleted ? "Completed" : "Mark as Done"}
                 </button>
 
-                {/* Remove Button */}
+
                 <button
                     onClick={handleRemove}
                     aria-label="Remove workout"
