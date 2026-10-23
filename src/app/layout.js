@@ -24,10 +24,14 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <div>
-          <Navbar />
-          <main>{children}</main>
-        </div>
+        <WorkContext>
+          <div>
+            <Navbar></Navbar>
+            <main>{children}</main>
+          </div>
+          <Footer></Footer>
+        </WorkContext>
+        <ToastContainer position="top-right" autoClose={2000} />
       </body>
     </html>
   );
