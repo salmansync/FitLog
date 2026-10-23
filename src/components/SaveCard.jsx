@@ -73,10 +73,7 @@ const SaveCard = ({ work }) => {
                 </Link>
 
 
-                <button className="flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-lime-400 hover:bg-lime-300 text-black font-semibold text-sm transition-colors">
-                    <Check className="w-4 h-4 stroke-3" />
-                    Mark as Done
-                </button>
+
 
 
                 <button

@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useContext, useState } from "react";
@@ -29,10 +28,13 @@ const PlanCard = ({ work }) => {
         toast.success("Removed from your plan!");
     };
 
-    const handleComplete = () => {
-        if (isCompleted) return;
 
-        setIsCompleted(true);
+    const handleComplete = () => {
+        const updatedPlan = plan.filter(
+            (item) => item.id !== work.id
+        );
+
+        setPlan(updatedPlan);
 
         toast.success("Workout completed!");
     };
@@ -100,11 +102,10 @@ const PlanCard = ({ work }) => {
                 <button
                     onClick={handleComplete}
                     disabled={isCompleted}
-                    className={`flex items-center gap-1.5 rounded-full px-5 py-2.5 text-sm font-semibold transition-colors ${
-                        isCompleted
-                            ? "cursor-not-allowed bg-gray-700 text-gray-300"
-                            : "bg-lime-400 text-black hover:bg-lime-300"
-                    }`}
+                    className={`flex items-center gap-1.5 rounded-full px-5 py-2.5 text-sm font-semibold transition-colors ${isCompleted
+                        ? "cursor-not-allowed bg-gray-700 text-gray-300"
+                        : "bg-lime-400 text-black hover:bg-lime-300"
+                        }`}
                 >
                     <Check className="h-4 w-4" />
                     {isCompleted ? "Completed" : "Mark as Done"}
