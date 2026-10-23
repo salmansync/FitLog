@@ -4,13 +4,16 @@ import Link from 'next/link';
 import React, { useContext } from 'react';
 
 const PlanHead = () => {
-    const { plan } = useContext(workContextProvider)
+    const { plan } = useContext(workContextProvider);
     return (
         <Link
             href={'/my-plan'}
-            className='bg-[#C6FF00] py-1 px-5 rounded-md text-black'
+            className='flex items-center gap-2.5 text-gray-200 hover:text-white font-medium text-sm transition-colors'
         >
-            Plan {plan.length}
+            <span>Plan</span>
+            <span className='w-6 h-6 flex items-center justify-center rounded-full bg-[#C6FF00] text-black font-bold text-xs'>
+                {plan.length}
+            </span>
         </Link>
     );
 };
